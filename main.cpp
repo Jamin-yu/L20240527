@@ -1,15 +1,17 @@
 #include <iostream>
 #include "World.h"
+#include "Player.h"
+
 
 using namespace std;
 
 int main()
 {
-	FWorld* World;
+	FPlayer Player;
 
-	cout << "Æ÷ÀÎÅÍ¸¸ »ý¼º" << endl;
-	World = new FWorld(); // Æ÷ÀÎÅÍ »ý¼ºµÊ
-	delete World;
+	//Player.HP = -100; 
+	Player.SetGold(-100) //»¹ÁþÇØµµ privateÀ¸·Î ¸·¾Æ³ö¼­ ¾ÈÁ×´Â´Ù.
 
+	
 	return 0;
 }

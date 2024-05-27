@@ -1,7 +1,9 @@
 #include "Player.h"
 
-FPlayer::FPlayer()
+FPlayer::FPlayer() : HP(0), Gold(0) //초기화 리스트
 {
+	//HP = 0;
+	//Gold = 0;
 }
 
 FPlayer::~FPlayer()

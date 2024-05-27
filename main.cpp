@@ -16,35 +16,21 @@ using namespace std;
 
 int main()
 {
-	//1~3
-	//Player 1
-	srand(time(0));
-	FPlayer Player;
-	int GoblinCount = rand() % 3 + 1;
-	vector<FGoblin*> Goblins;
-	
+	//FPlayer Player;
+	//vector<FMonster*> Monsters;
+	//Monsters.push_back(new FMonster);
+	//Monsters.push_back(new FGoblin);
 
-	for (int i = 0; i < GoblinCount; ++i)
-	{
-		Goblins.push_back(new FGoblin);
-		Goblins[i]->SetGold(100 + i);
-	}
-	
-	for (int i = 0; i < GoblinCount; ++i)
-	{
-		cout << Goblins[i]->GetGold() << endl;
-	}
+	//for (int i = 0; i < Monsters.size(); ++i)
+	//{
+		//Monsters[i]->Move();
 
-	for (int i = 0; i < GoblinCount; ++i) //지우기
-	{
-		delete Goblins[i];
-	}
+	//}
 	
-	Goblins.clear(); //화살표까지 지우기
-	
-	FSlime Slime;
-	FWildBoar Wildboar;
- 
+	FMonster* Monster = new FGoblin();
+
+	Monster->Move();
+
 	
 	return 0;
 }

@@ -9,6 +9,6 @@ public:
 	~FGoblin();
 
 	void Jump();
-	void Move();
+	virtual void Move() override; //부모에 있지만 다시 정의 *virtual / override
 };
 

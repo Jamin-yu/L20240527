@@ -3,9 +3,9 @@ class FMonster
 {
 public:
 	FMonster();
-	~FMonster();
+	virtual ~FMonster();
 	
-	void Move();
+	virtual void Move(); //virtual function table : 자식에서 재정의 하면 확인하고 써라 (가상함수)
 	void Attack();
 	void Pickup();
 	int GetGold();

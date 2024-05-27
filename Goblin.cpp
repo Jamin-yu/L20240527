@@ -17,3 +17,8 @@ void FGoblin::Jump()
 {
 }
 
+void FGoblin::Move()
+{
+	cout << "Goblin Move" << endl;
+}
+

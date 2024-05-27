@@ -7,6 +7,7 @@ class FSlime : public FMonster
 public:
 	FSlime();
 	~FSlime();
+	void Slide()
 
 	void Slide();
 };
